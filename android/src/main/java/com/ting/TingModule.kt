@@ -36,8 +36,8 @@ import kotlin.math.roundToInt
 class TingModule internal constructor(context: ReactApplicationContext) : TingSpec(context) {
 
   private var context: Context = context
-  private val alertWindow = EasyWindow<EasyWindow<*>>(currentActivity)
-  private val toastWindow = EasyWindow<EasyWindow<*>>(currentActivity)
+  private val alertWindow = EasyWindow<EasyWindow<*>>(getCurrentActivity())
+  private val toastWindow = EasyWindow<EasyWindow<*>>(getCurrentActivity())
   private var toastOptionInit: ReadableMap? = null
   private var alertOptionInit: ReadableMap? = null
 
